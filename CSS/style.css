@@ -54,3 +54,182 @@
   --section-padding: 100px;
   --container-width: 1200px;
 }
+/* ==============================
+      HER SKY NAVBAR
+================================*/
+
+.hersky-navbar{
+    background:
+    rgba(255,255,255,0.65);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom:
+    1px solid rgba(255,255,255,0.4);
+    padding: 18px 0;
+    transition: var(--transition);
+    z-index:1000;
+}
+/* Logo */
+.hersky-logo{
+    font-family:var(--heading-font);
+    font-size:2rem;
+    font-weight:700;
+    color:var(--heading-color);
+    letter-spacing:-1px;
+    position:relative;
+}
+.hersky-logo span{
+    color:var(--primary);
+}
+.hersky-logo small{
+    display:block;
+    font-family:var(--body-font);
+    font-size:.65rem;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:var(--text-light);
+    margin-top:-8px;
+}
+
+/* Navbar Links */
+.navbar-nav{
+    gap:15px;
+}
+
+.nav-link{
+    position:relative;
+    color:var(--heading-color);
+    font-family:var(--body-font);
+    font-weight:500;
+    padding:8px 15px !important;
+    transition:var(--transition);
+}
+
+/* Hover underline animation */
+.nav-link::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:0;
+    width:0;
+    height:2px;
+    background:var(--primary);
+    transform:translateX(-50%);
+    transition:.35s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after{
+    width:70%;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:var(--primary);
+}
+
+/* Register Button */
+
+.hersky-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 13px 32px;
+    border-radius: 50px;
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        #6F95B5
+    );
+    color: var(--white);
+    font-family: var(--body-font);
+    font-size: .95rem;
+    font-weight: 600;
+    letter-spacing: .3px;
+    border: none;
+    overflow: hidden;
+    transition: .4s ease;
+    box-shadow:
+    0 12px 30px rgba(129,166,198,.35);
+
+}
+
+
+/* Shine animation */
+
+.hersky-btn::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:60%;
+    height:100%;
+    background:
+    linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.5),
+        transparent
+    );
+    transition:.6s;
+}
+
+.hersky-btn:hover::before {
+    left:120%;
+
+}
+
+.hersky-btn:hover {
+
+    transform:translateY(-5px);
+    color:white;
+    box-shadow:
+    0 18px 40px rgba(129,166,198,.45);
+
+}
+/* Mobile Toggle */
+.navbar-toggler{
+    border:none;
+    padding:8px;
+}
+
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+
+
+
+.navbar-toggler-icon{
+    background-image:
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%232F3A45' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+}
+
+/* Mobile Design */
+
+@media(max-width:991px){
+    .hersky-navbar{
+        padding:14px 0;
+    }
+
+    .navbar-collapse{
+        background:white;
+        margin-top:20px;
+        padding:25px;
+        border-radius:20px;
+        box-shadow:var(--shadow-md);
+    }
+
+    .navbar-nav{
+        gap:10px;
+        text-align:center;
+    }
+
+    .hersky-btn{
+        display:block;
+        text-align:center;
+        margin-top:20px;
+    }
+}
