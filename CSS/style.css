@@ -1,0 +1,56 @@
+:root {
+  /* ========== Brand Colors ========== */
+  --primary: #81A6C6;
+  --secondary: #AACDDC;
+  --accent: #F3E3D0;
+  --neutral: #D2C4B4;
+
+  /* ========== Basic Colors ========== */
+  --white: #FFFFFF;
+  --black: #222222;
+
+  /* ========== Text Colors ========== */
+  --heading-color: #2F3A45;
+  --text-color: #5B6670;
+  --text-light: #7D8790;
+
+  /* ========== Backgrounds ========== */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8FAFC;
+  --bg-accent: var(--accent);
+
+  /* ========== Buttons ========== */
+  --btn-primary: var(--primary);
+  --btn-primary-hover: #6F95B5;
+
+  --btn-secondary: var(--secondary);
+  --btn-secondary-hover: #95C0D2;
+
+  /* ========== Borders ========== */
+  --border-color: #E7E7E7;
+  --border-radius: 12px;
+
+  /* ========== Shadows ========== */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.08);
+  --shadow-md: 0 8px 25px rgba(0,0,0,.12);
+  --shadow-lg: 0 15px 40px rgba(0,0,0,.15);
+
+  /* ========== Transition ========== */
+  --transition: all .3s ease;
+
+  /* ========== Typography ========== */
+  --heading-font: "Playfair Display", serif;
+  --body-font: "Poppins", sans-serif;
+
+  --h1: 3.5rem;
+  --h2: 2.7rem;
+  --h3: 2rem;
+  --h4: 1.4rem;
+
+  --body: 1rem;
+  --small: .9rem;
+
+  /* ========== Spacing ========== */
+  --section-padding: 100px;
+  --container-width: 1200px;
+}
