@@ -1267,7 +1267,32 @@ color:#667085;
 line-height:28px;
 
 }
+/* RESPONSIVE */
 
+
+@media(max-width:992px){
+
+.themes-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:576px){
+
+.themes-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+}
 
 
 
