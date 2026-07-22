@@ -1643,6 +1643,106 @@ opacity:1;
 
 }
 
+/*==============================
+CTA
+===============================*/
+
+
+.cta-section{
+
+padding:100px 0;
+
+background:white;
+
+}
+
+
+
+.cta-box{
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#81A6C6,
+
+#AACDDC
+
+);
+
+border-radius:40px;
+
+padding:70px 40px;
+
+text-align:center;
+
+color:white;
+
+box-shadow:
+
+0 25px 60px rgba(129,166,198,.3);
+
+}
+
+
+
+.cta-box h2{
+
+font-size:45px;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+}
+
+
+
+.cta-box p{
+
+font-size:18px;
+
+margin-bottom:35px;
+
+}
+
+
+
+.cta-btn{
+
+display:inline-block;
+
+background:white;
+
+color:#81A6C6;
+
+padding:16px 40px;
+
+border-radius:50px;
+
+font-weight:700;
+
+transition:.4s;
+
+}
+
+
+
+.cta-btn:hover{
+
+background:#F3E3D0;
+
+transform:translateY(-5px);
+
+}
+
+.gallary-img{
+    height: 320px;
+}
+
+
 
 
 
