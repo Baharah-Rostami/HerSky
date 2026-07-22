@@ -440,3 +440,56 @@ transform:translateY(0);
 }
 
 }
+/*==============================
+ RESPONSIVE
+===============================*/
+
+@media(max-width:992px){
+
+.about-hero{
+
+text-align:center;
+
+}
+
+.about-hero h1{
+
+font-size:48px;
+
+}
+
+.about-hero p{
+
+margin:auto;
+
+margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.glass-circle{
+
+width:340px;
+
+height:340px;
+
+margin-top:60px;
+
+}
+
+.card-one,
+
+.card-two,
+
+.card-three{
+
+display:none;
+
+}
+
+}
