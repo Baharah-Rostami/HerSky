@@ -765,3 +765,38 @@ font-size:17px;
 line-height:30px;
 
 }
+/* TIMELINE */
+
+
+.mission-timeline{
+
+position:relative;
+
+max-width:900px;
+
+margin:80px auto 0;
+
+}
+
+
+.mission-timeline::before{
+
+content:"";
+
+position:absolute;
+
+width:4px;
+
+height:100%;
+
+background:#AACDDC;
+
+left:50%;
+
+transform:translateX(-50%);
+
+border-radius:10px;
+
+}
+
+
