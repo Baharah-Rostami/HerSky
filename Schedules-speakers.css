@@ -151,3 +151,26 @@ section {
   font-size: 0.9rem;
   margin-bottom: 0.75rem;
 }
+/* ---------- Networking ---------- */
+.networking-section {
+  background: linear-gradient(135deg, var(--c2), var(--c1));
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(129, 166, 198, 0.3);
+}
+.networking-section h2,
+.networking-section h3 {
+  color: #fff;
+}
+.networking-section .section-title::after {
+  background: #fff;
+}
+.networking-detail {
+  background: rgba(255, 255, 255, 0.15);
+  /* backdrop-filter: blur(6px); */
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-top: 1rem;
+}
