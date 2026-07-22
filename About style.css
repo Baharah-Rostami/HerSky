@@ -1155,6 +1155,26 @@ gap:70px 40px;
 margin-top:80px;
 
 }
+/* ITEM */
+
+
+.theme-item{
+
+text-align:center;
+
+transition:.4s;
+
+}
+
+
+
+.theme-item:hover{
+
+transform:translateY(-12px);
+
+}
+
+
 
 
 
