@@ -1126,6 +1126,35 @@ line-height:30px;
 font-size:16px;
 
 }
+/*==============================
+CONFERENCE THEMES
+===============================*/
+
+
+.themes-section{
+
+padding:120px 0;
+
+background:#F8FAFC;
+
+}
+
+
+
+/* GRID */
+
+
+.themes-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:70px 40px;
+
+margin-top:80px;
+
+}
 
 
 
