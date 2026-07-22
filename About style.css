@@ -550,3 +550,18 @@ color:#667085;
 margin-bottom:20px;
 
 }
+/* IMAGE */
+
+.about-image-wrapper{
+
+position:relative;
+
+}
+
+.main-about-img{
+
+border-radius:30px;
+
+box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
