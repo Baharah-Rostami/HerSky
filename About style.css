@@ -632,3 +632,76 @@ font-size:28px;
 color:#81A6C6;
 
 }
+/* INFO BOX */
+
+.info-box{
+
+background:#fff;
+
+border-radius:22px;
+
+padding:30px;
+
+text-align:center;
+
+transition:.4s;
+
+border:1px solid #eef1f4;
+
+height:100%;
+
+}
+
+.info-box:hover{
+
+transform:translateY(-10px);
+
+background:#81A6C6;
+
+color:white;
+
+}
+
+.info-box:hover p,
+
+.info-box:hover h4,
+
+.info-box:hover i{
+
+color:white;
+
+}
+
+.info-box i{
+
+font-size:34px;
+
+color:#81A6C6;
+
+margin-bottom:15px;
+
+transition:.4s;
+
+}
+
+.info-box h4{
+
+font-size:32px;
+
+font-weight:700;
+
+margin-bottom:8px;
+
+transition:.4s;
+
+}
+
+.info-box p{
+
+margin:0;
+
+color:#667085;
+
+transition:.4s;
+
+}
