@@ -870,5 +870,60 @@ transition:.4s;
 transform:translateX(-50%) scale(1.15);
 
 }
+/* CONTENT */
+
+
+.mission-content{
+
+background:white;
+
+width:40%;
+
+padding:35px;
+
+border-radius:25px;
+
+box-shadow:
+
+0 15px 40px rgba(0,0,0,.08);
+
+transition:.4s;
+
+border:1px solid rgba(129,166,198,.15);
+
+}
+
+
+.mission-content:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+.mission-content h3{
+
+font-size:28px;
+
+color:#81A6C6;
+
+margin-bottom:15px;
+
+}
+
+
+
+.mission-content p{
+
+color:#667085;
+
+line-height:30px;
+
+margin:0;
+
+}
+
+
 
 
