@@ -198,3 +198,86 @@ section {
   color: var(--c1);
   margin-bottom: 0.75rem;
 }
+/* ---------- Speaker cards ---------- */
+.speaker-card {
+  background: #fff;
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  height: 100%;
+}
+.speaker-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+.speaker-photo {
+  width: 100%;
+  height: 260px;
+  background: linear-gradient(135deg, var(--c2), var(--c3));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.speaker-card .card-body {
+  padding: 1.5rem;
+  text-align: center;
+}
+.speaker-card h5 {
+  margin-bottom: 0.25rem;
+  color: var(--text-dark);
+}
+.speaker-title {
+  color: var(--c1);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.75rem;
+}
+.speaker-bio {
+  color: var(--text-muted);
+  font-size: 0.925rem;
+  margin-bottom: 1rem;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.social-icons a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--c3);
+  color: var(--text-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.social-icons a:hover {
+  background: var(--c1);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up {
+  animation: fadeUp 0.7s ease both;
+}
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 576px) {
+  .hero { padding: 4rem 1rem; }
+  section { padding: 2.5rem 0; }
+  .speaker-photo { height: 220px; }
+}
