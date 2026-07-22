@@ -82,3 +82,72 @@ section {
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(129, 166, 198, 0.4);
 }
+/* ---------- Schedule ---------- */
+.day-badge {
+  display: inline-block;
+  background: var(--c1);
+  color: #fff;
+  padding: 0.4rem 1.25rem;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+.session-card {
+  background: #fff;
+  border-left: 5px solid var(--c1);
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.session-card:hover {
+  transform: translateX(6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-left-color: var(--c3);
+}
+.session-time {
+  color: var(--c1);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.session-title {
+  color: var(--text-dark);
+  font-weight: 600;
+  margin: 0.25rem 0;
+}
+.session-meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.session-meta span {
+  margin-right: 1.25rem;
+}
+/* ---------- Workshops ---------- */
+.workshop-card {
+  background: linear-gradient(135deg, #ffffff, var(--c3));
+  border-radius: 1rem;
+  padding: 1.75rem;
+  height: 100%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.workshop-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1);
+}
+.workshop-card h5 {
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+.workshop-instructor {
+  color: var(--c1);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.workshop-time {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
