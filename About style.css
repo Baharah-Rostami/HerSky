@@ -705,3 +705,34 @@ color:#667085;
 transition:.4s;
 
 }
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+.experience-card{
+
+left:10px;
+
+bottom:10px;
+
+padding:18px;
+
+}
+
+.speaker-card{
+
+right:10px;
+
+top:10px;
+
+padding:15px;
+
+}
+
+.section-title{
+
+font-size:35px;
+
+}
+
+}
