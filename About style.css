@@ -798,5 +798,32 @@ transform:translateX(-50%);
 border-radius:10px;
 
 }
+/* ITEM */
+
+
+.mission-item{
+
+display:flex;
+
+align-items:center;
+
+justify-content:flex-start;
+
+position:relative;
+
+margin-bottom:70px;
+
+width:100%;
+
+}
+
+
+
+.mission-item.reverse{
+
+justify-content:flex-end;
+
+}
+
 
 
