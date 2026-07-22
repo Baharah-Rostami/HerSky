@@ -923,7 +923,48 @@ line-height:30px;
 margin:0;
 
 }
+/* RESPONSIVE */
 
+
+@media(max-width:768px){
+
+
+.mission-timeline::before{
+
+left:35px;
+
+}
+
+
+
+.mission-item,
+
+.mission-item.reverse{
+
+justify-content:flex-start;
+
+padding-left:90px;
+
+}
+
+
+
+.mission-icon{
+
+left:35px;
+
+}
+
+
+
+.mission-content{
+
+width:100%;
+
+}
+
+
+}
 
 
 
