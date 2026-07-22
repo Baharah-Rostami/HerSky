@@ -1,0 +1,200 @@
+:root {
+  --c1: #81A6C6;
+  --c2: #AACDDC;
+  --c3: #F3E3D0;
+  --c4: #D2C4B4;
+  --text-dark: #2b3a45;
+  --text-muted: #5a6b76;
+}
+/* ---------- Base ---------- */
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-dark);
+  background-color: #fbf8f4;
+  line-height: 1.6;
+}
+h1, h2, h3, h4 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+section {
+  padding: 4rem 0;
+}
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(135deg, var(--c1) 0%, var(--c2) 50%, var(--c3) 100%);
+  color: #fff;
+  padding: 6rem 1rem;
+  text-align: center;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.hero p {
+  font-size: 1.15rem;
+  max-width: 720px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+/* ---------- Section titles ---------- */
+.section-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: var(--text-dark);
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 0.75rem auto 0;
+  background: var(--c1);
+  border-radius: 2px;
+}
+/* ---------- Category filter buttons ---------- */
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+}
+.category-btn {
+  background-color: #fff;
+  color: var(--text-dark);
+  border: 2px solid var(--c2);
+  padding: 0.55rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.category-btn:hover,
+.category-btn.active {
+  background-color: var(--c1);
+  color: #fff;
+  border-color: var(--c1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(129, 166, 198, 0.4);
+}
+/* ---------- Schedule ---------- */
+.day-badge {
+  display: inline-block;
+  background: var(--c1);
+  color: #fff;
+  padding: 0.4rem 1.25rem;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+.session-card {
+  background: #fff;
+  border-left: 5px solid var(--c1);
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.session-card:hover {
+  transform: translateX(6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-left-color: var(--c3);
+}
+.session-time {
+  color: var(--c1);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.session-title {
+  color: var(--text-dark);
+  font-weight: 600;
+  margin: 0.25rem 0;
+}
+.session-meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.session-meta span {
+  margin-right: 1.25rem;
+}
+/* ---------- Workshops ---------- */
+.workshop-card {
+  background: linear-gradient(135deg, #ffffff, var(--c3));
+  border-radius: 1rem;
+  padding: 1.75rem;
+  height: 100%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.workshop-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1);
+}
+.workshop-card h5 {
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+.workshop-instructor {
+  color: var(--c1);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.workshop-time {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+/* ---------- Networking ---------- */
+.networking-section {
+  background: linear-gradient(135deg, var(--c2), var(--c1));
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(129, 166, 198, 0.3);
+}
+.networking-section h2,
+.networking-section h3 {
+  color: #fff;
+}
+.networking-section .section-title::after {
+  background: #fff;
+}
+.networking-detail {
+  background: rgba(255, 255, 255, 0.15);
+  /* backdrop-filter: blur(6px); */
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-top: 1rem;
+}
+/* ---------- Closing ceremony ---------- */
+.closing-section {
+  background: linear-gradient(135deg, var(--c3), var(--c4));
+  border-radius: 1.5rem;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.closing-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  margin-top: 1rem;
+  height: 100%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.35s ease;
+}
+.closing-card:hover {
+  transform: translateY(-6px);
+}
+.closing-icon {
+  font-size: 2.5rem;
+  color: var(--c1);
+  margin-bottom: 0.75rem;
+}
