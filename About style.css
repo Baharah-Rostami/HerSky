@@ -1776,6 +1776,34 @@ font-size:32px;
 }
 
 }
+/*==============================
+SCROLL ANIMATION
+===============================*/
+
+
+.why-card,
+.mission-item,
+.theme-item,
+.flip-card,
+.gallery-item{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:1s ease;
+
+}
+
+
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
 
 
 
