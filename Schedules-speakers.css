@@ -1,0 +1,84 @@
+:root {
+  --c1: #81A6C6;
+  --c2: #AACDDC;
+  --c3: #F3E3D0;
+  --c4: #D2C4B4;
+  --text-dark: #2b3a45;
+  --text-muted: #5a6b76;
+}
+/* ---------- Base ---------- */
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-dark);
+  background-color: #fbf8f4;
+  line-height: 1.6;
+}
+h1, h2, h3, h4 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+section {
+  padding: 4rem 0;
+}
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(135deg, var(--c1) 0%, var(--c2) 50%, var(--c3) 100%);
+  color: #fff;
+  padding: 6rem 1rem;
+  text-align: center;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.hero p {
+  font-size: 1.15rem;
+  max-width: 720px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+/* ---------- Section titles ---------- */
+.section-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: var(--text-dark);
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 0.75rem auto 0;
+  background: var(--c1);
+  border-radius: 2px;
+}
+/* ---------- Category filter buttons ---------- */
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+}
+.category-btn {
+  background-color: #fff;
+  color: var(--text-dark);
+  border: 2px solid var(--c2);
+  padding: 0.55rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.category-btn:hover,
+.category-btn.active {
+  background-color: var(--c1);
+  color: #fff;
+  border-color: var(--c1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(129, 166, 198, 0.4);
+}
