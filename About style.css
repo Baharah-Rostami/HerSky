@@ -1742,6 +1742,41 @@ transform:translateY(-5px);
     height: 320px;
 }
 
+/*==============================
+RESPONSIVE
+===============================*/
+
+
+@media(max-width:992px){
+
+.gallery-grid{
+
+columns:2;
+
+}
+
+
+}
+
+
+
+@media(max-width:576px){
+
+.gallery-grid{
+
+columns:1;
+
+}
+
+
+.cta-box h2{
+
+font-size:32px;
+
+}
+
+}
+
 
 
 
