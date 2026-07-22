@@ -565,3 +565,70 @@ border-radius:30px;
 box-shadow:0 25px 60px rgba(0,0,0,.15);
 
 }
+/* EXPERIENCE CARD */
+
+.experience-card{
+
+position:absolute;
+
+bottom:25px;
+
+left:-30px;
+
+background:#81A6C6;
+
+color:white;
+
+padding:25px 35px;
+
+border-radius:20px;
+
+box-shadow:0 20px 40px rgba(129,166,198,.4);
+
+}
+
+.experience-card h2{
+
+font-size:40px;
+
+font-weight:700;
+
+margin-bottom:5px;
+
+}
+
+/* SPEAKER CARD */
+
+.speaker-card{
+
+position:absolute;
+
+top:30px;
+
+right:-20px;
+
+background:white;
+
+padding:18px 25px;
+
+border-radius:20px;
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.1);
+
+font-weight:600;
+
+}
+
+.speaker-card i{
+
+font-size:28px;
+
+color:#81A6C6;
+
+}
