@@ -825,5 +825,50 @@ justify-content:flex-end;
 
 }
 
+/* ICON */
+
+
+.mission-icon{
+
+width:90px;
+
+height:90px;
+
+border-radius:50%;
+
+background:#81A6C6;
+
+color:white;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:35px;
+
+position:absolute;
+
+left:50%;
+
+transform:translateX(-50%);
+
+box-shadow:
+
+0 15px 35px rgba(129,166,198,.4);
+
+z-index:2;
+
+transition:.4s;
+
+}
+
+
+.mission-icon:hover{
+
+transform:translateX(-50%) scale(1.15);
+
+}
 
 
