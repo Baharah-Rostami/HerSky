@@ -122,12 +122,10 @@
 .nav-link.active::after{
     width:70%;
 }
-
 .nav-link:hover,
 .nav-link.active{
     color:var(--primary);
 }
-
 /* Register Button */
 
 .hersky-btn {
