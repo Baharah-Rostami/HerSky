@@ -736,3 +736,32 @@ font-size:35px;
 }
 
 }
+/*==============================
+OUR MISSION
+===============================*/
+
+
+.mission-section{
+
+background:#F8FAFC;
+
+padding:120px 0;
+
+position:relative;
+
+}
+
+
+.mission-intro{
+
+max-width:700px;
+
+margin:auto;
+
+color:#667085;
+
+font-size:17px;
+
+line-height:30px;
+
+}
