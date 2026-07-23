@@ -13,6 +13,40 @@ body {
   background-color: #fbf8f4;
   line-height: 1.6;
 }
+/* =========================================================
+   MODERN SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eef4f8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        180deg,
+        var(--primary-blue),
+        var(--light-blue)
+    );
+    border-radius: 50px;
+    border: 3px solid #eef4f8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+        180deg,
+        var(--light-blue),
+        var(--primary-blue)
+    );
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-blue) #eef4f8;
+}
 h1, h2, h3, h4 {
   font-weight: 700;
   letter-spacing: -0.5px;
@@ -27,7 +61,7 @@ position:relative;
 ================================*/
 .hersky-navbar {
     padding: 18px 0;
-    background: rgba(255, 255, 255, .65);
+    background: rgba(255, 255, 255, 0.847);
     backdrop-filter: blur(22px);
     -webkit-backdrop-filter: blur(22px);
     border-bottom: 1px solid rgba(255, 255, 255, .35);
@@ -351,7 +385,6 @@ position:relative;
     }
 
 }
-
 /* ---------- Hero ---------- */
 .speakers-hero{
 
