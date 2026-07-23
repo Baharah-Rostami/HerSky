@@ -80,7 +80,7 @@ section {
 ========================================================= */
 
 .registration-hero {
-    min-height: 90vh;
+    min-height: 150vh;
     display: flex;
     align-items: center;
 
@@ -199,6 +199,29 @@ section {
     background: var(--white);
     color: var(--dark-text);
     transform: translateY(-4px);
+}
+/*==============================
+ WAVE
+===============================*/
+
+.wave{
+
+position:absolute;
+
+bottom:-2px;
+
+left:0;
+
+width:100%;
+
+}
+
+.wave svg{
+
+display:block;
+
+width:100%;
+
 }
 
 

@@ -110,12 +110,8 @@ section {
     padding: 0;
 }
 
-.hersky-logo img {
-    height: 60px;
-    width: auto;
-    display: block;
-    transition: .3s ease;
-}
+.gallery-hero {
+    min-height: 150vh;
 
 .hersky-logo:hover img {
     transform: scale(1.05);
@@ -539,6 +535,29 @@ section {
 
 .hero-gallery-btn:hover i {
     transform: translateY(4px);
+}
+/*==============================
+ WAVE
+===============================*/
+
+.wave{
+
+position:absolute;
+
+bottom:-2px;
+
+left:0;
+
+width:100%;
+
+}
+
+.wave svg{
+
+display:block;
+
+width:100%;
+
 }
 
 
