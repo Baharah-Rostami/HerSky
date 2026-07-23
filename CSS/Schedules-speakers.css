@@ -373,7 +373,7 @@ position:relative;
         rgba(35,50,65,.65)
     ),
 
-    url("../Azadeh\ images/");
+    url(../HomeImages/speakers-bg.jpg);
 
 
     background-size:cover;
