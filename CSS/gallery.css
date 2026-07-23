@@ -94,7 +94,7 @@ section {
 ========================================================= */
 
 .gallery-hero {
-    min-height: 90vh;
+    min-height: 150vh;
 
     display: flex;
     align-items: center;
@@ -231,6 +231,29 @@ section {
 
 .hero-gallery-btn:hover i {
     transform: translateY(4px);
+}
+/*==============================
+ WAVE
+===============================*/
+
+.wave{
+
+position:absolute;
+
+bottom:-2px;
+
+left:0;
+
+width:100%;
+
+}
+
+.wave svg{
+
+display:block;
+
+width:100%;
+
 }
 
 
