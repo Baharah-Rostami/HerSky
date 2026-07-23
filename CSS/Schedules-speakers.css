@@ -353,51 +353,269 @@ position:relative;
 }
 
 /* ---------- Hero ---------- */
-.hero{
-margin-top:95px;
-padding:8rem 1rem 6rem;
-background:
-linear-gradient(135deg,
-rgba(129,166,198,.95),
-rgba(170,205,220,.9),
-rgba(243,227,208,.95));
-position:relative;
-overflow:hidden;
-border-radius:0 0 70px 70px;
+.speakers-hero{
+
+    min-height:120vh;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+
+    background:
+
+    linear-gradient(
+        rgba(35,50,65,.65),
+        rgba(35,50,65,.65)
+    ),
+
+    url("../Azadeh\ images/");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    animation:heroZoom 12s infinite alternate;
+
 }
 
-.hero::before{
-content:"";
-position:absolute;
-width:550px;
-height:550px;
-background:rgba(255,255,255,.18);
-border-radius:50%;
-top:-220px;
-right:-180px;
-filter:blur(10px);
+
+
+
+@keyframes heroZoom{
+
+    from{
+
+        background-size:100%;
+
+    }
+
+
+    to{
+
+        background-size:110%;
+
+    }
+
 }
 
-.hero::after{
-content:"";
+
+
+/* CONTENT */
+
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    color:white;
+
+}
+
+
+
+.hero-tag{
+
+    display:inline-block;
+
+    padding:10px 25px;
+
+    border-radius:50px;
+
+    background:#aacddc;
+
+    color:#35546d;
+
+    font-weight:600;
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    animation:showText .8s forwards;
+
+}
+
+
+
+
+.speakers-title{
+
+    font-size:4rem;
+
+    line-height:1.2;
+
+    color:white;
+
+    margin:25px 0;
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:showText .8s .3s forwards;
+
+}
+
+
+
+.speakers-title span{
+
+    color:#aacddc;
+
+}
+
+
+
+
+.speakers-text{
+
+    max-width:600px;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    color:#f3e3d0;
+
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:showText .8s .6s forwards;
+
+}
+
+
+
+
+.hero-buttons{
+
+    margin-top:35px;
+
+    display:flex;
+
+    gap:20px;
+
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:showText .8s .9s forwards;
+
+}
+
+
+
+
+@keyframes showText{
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+/* BUTTONS */
+
+
+.hero-btn{
+
+    padding:14px 35px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.primary{
+
+    background:#81A6C6;
+
+    color:white;
+
+}
+
+
+.primary:hover{
+
+    transform:translateY(-5px);
+
+    background:#6d95b7;
+
+}
+
+
+
+
+.secondary{
+
+    border:2px solid white;
+
+    color:white;
+
+}
+
+
+.secondary:hover{
+
+    background:white;
+
+    color:#35546d;
+
+}
+
+
+
+/* WAVE */
+
+
+/*==============================
+ WAVE
+===============================*/
+
+.wave{
+
 position:absolute;
-width:420px;
-height:420px;
-background:rgba(255,255,255,.12);
-border-radius:50%;
-bottom:-220px;
-left:-120px;
+
+bottom:-2px;
+
+left:0;
+
+width:100%;
+
 }
-.hero h1 {
-  font-size: clamp(2.2rem, 5vw, 3.8rem);
-  margin-bottom: 1rem;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-.hero p {
-  font-size: 1.15rem;
-  max-width: 720px;
-  margin: 0 auto;
-  opacity: 0.95;
+
+.wave svg{
+
+display:block;
+
+width:100%;
+
 }
 /* ---------- Section titles ---------- */
 .section-title {
