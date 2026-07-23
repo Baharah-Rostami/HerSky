@@ -104,3 +104,66 @@ window.addEventListener("scroll", reveal);
 
 
 reveal();
+
+  const nav = document.querySelector(".navbar-nav");
+        const pill = document.querySelector(".nav-pill");
+        const links = document.querySelectorAll(".nav-link");
+
+        function movePill(element) {
+            if (!element || window.innerWidth < 992) return;
+
+            const navRect = nav.getBoundingClientRect();
+            const linkRect = element.getBoundingClientRect();
+
+            pill.style.width = `${linkRect.width}px`;
+            pill.style.left = `${linkRect.left - navRect.left}px`;
+        }
+
+        const activeLink = document.querySelector(".nav-link.active");
+
+        movePill(activeLink);
+
+        links.forEach(link => {
+
+            link.addEventListener("mouseenter", () => {
+
+                movePill(link);
+
+            });
+
+        });
+
+
+        nav.addEventListener("mouseleave", () => {
+
+            movePill(activeLink);
+
+        });
+
+
+        // Navbar glass effect on scroll
+
+        const navbar = document.querySelector(".hersky-navbar");
+
+        window.addEventListener("scroll", () => {
+
+            if (window.scrollY > 40) {
+
+                navbar.classList.add("scrolled");
+
+            } else {
+
+                navbar.classList.remove("scrolled");
+
+            }
+
+        });
+
+
+        // Update pill when screen changes
+
+        window.addEventListener("resize", () => {
+
+            movePill(activeLink);
+
+        });
