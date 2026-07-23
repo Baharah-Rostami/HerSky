@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conference Registration</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Registration CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+<nav class="navbar navbar-expand-lg fixed-top conference-navbar">
+    <div class="container">
+
+        <a class="navbar-brand" href="registration.html">
+            <span class="brand-icon">
+                <i class="bi bi-globe2"></i>
+            </span>
+            Global<span>Conf</span>
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+        >
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#tickets">Tickets</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#benefits">Benefits</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+
+                <li class="nav-item ms-lg-3">
+                    <a href="#registration-form" class="btn nav-register-btn">
+                        Register Now
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- =========================
+     HERO / REGISTRATION BANNER
+========================= -->
+<section class="registration-hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-8">
+
+                <span class="hero-badge">
+                    <i class="bi bi-calendar-event"></i>
+                    July 20–22, 2026
+                </span>
+
+                <h1>
+                    Register for the
+                    <span>Conference</span>
+                </h1>
+
+                <p>
+                    Join inspiring speakers, professionals, students,
+                    and innovators from around the world.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#tickets" class="btn primary-btn">
+                        Explore Tickets
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <a href="#registration-form" class="btn outline-btn">
+                        Register Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BREADCRUMB
+========================= -->
+<section class="breadcrumb-section">
+
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+
+            <ol class="breadcrumb mb-0">
+
+                <li class="breadcrumb-item">
+                    <a href="registration.html">Home</a>
+                </li>
+
+                <li class="breadcrumb-item active">
+                    Registration
+                </li>
+
+            </ol>
+
+        </nav>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TICKET PLANS
+========================= -->
+<section class="tickets-section section-padding" id="tickets">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <span class="section-label">
+                Choose Your Ticket
+            </span>
+
+            <h2>
+                Conference <span>Ticket Plans</span>
+            </h2>
+
+            <p>
+                Select the ticket that best fits your needs
+                and join an inspiring global community.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4 justify-content-center">
+
+
+            <!-- STUDENT -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="ticket-card">
+
+                    <div class="ticket-icon">
+                        <i class="bi bi-mortarboard"></i>
+                    </div>
+
+                    <h3>Student</h3>
+
+                    <p class="ticket-description">
+                        An affordable option designed
+                        especially for students.
+                    </p>
+
+                    <div class="ticket-price">
+                        <span>$</span>20
+                    </div>
+
+                    <ul class="ticket-features">
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Conference Access
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Conference Materials
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Certificate of Participation
+                        </li>
+
+                    </ul>
+
+                    <a
+                        href="#registration-form"
+                        class="btn ticket-btn"
+                        data-ticket="Student"
+                    >
+                        Register Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFESSIONAL -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="ticket-card popular-card">
+
+                    <div class="popular-badge">
+                        Most Popular
+                    </div>
+
+                    <div class="ticket-icon">
+                        <i class="bi bi-briefcase"></i>
+                    </div>
+
+                    <h3>Professional</h3>
+
+                    <p class="ticket-description">
+                        Perfect for professionals,
+                        researchers, and industry experts.
+                    </p>
+
+                    <div class="ticket-price">
+                        <span>$</span>50
+                    </div>
+
+                    <ul class="ticket-features">
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Full Conference Access
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Conference Materials
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Certificate
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Networking Opportunities
+                        </li>
+
+                    </ul>
+
+                    <a
+                        href="#registration-form"
+                        class="btn ticket-btn"
+                        data-ticket="Professional"
+                    >
+                        Register Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- VIP -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="ticket-card">
+
+                    <div class="ticket-icon">
+                        <i class="bi bi-gem"></i>
+                    </div>
+
+                    <h3>VIP</h3>
+
+                    <p class="ticket-description">
+                        Enjoy a premium and exclusive
+                        conference experience.
+                    </p>
+
+                    <div class="ticket-price">
+                        <span>$</span>100
+                    </div>
+
+                    <ul class="ticket-features">
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Full Conference Access
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            VIP Seating
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Premium Materials
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            VIP Networking
+                        </li>
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Exclusive Dinner
+                        </li>
+
+                    </ul>
+
+                    <a
+                        href="#registration-form"
+                        class="btn ticket-btn"
+                        data-ticket="VIP"
+                    >
+                        Register Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     REGISTRATION FORM
+========================= -->
+<section
+    class="registration-form-section section-padding"
+    id="registration-form"
+>
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-5">
+
+                <span class="section-label">
+                    Secure Your Seat
+                </span>
+
+                <h2>
+                    Complete Your
+                    <span>Registration</span>
+                </h2>
+
+                <p>
+                    Fill out the registration form and reserve
+                    your place at our international conference.
+                </p>
+
+                <div class="form-info">
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+
+                        <div>
+                            <h5>Conference Date</h5>
+                            <p>July 20–22, 2026</p>
+                        </div>
+                    </div>
+
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+
+                        <div>
+                            <h5>Conference Venue</h5>
+                            <p>International Conference Center</p>
+                        </div>
+                    </div>
+
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+
+                        <div>
+                            <h5>Email Support</h5>
+                            <p>info@globalconf.com</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-7">
+
+                <div class="registration-form-card">
+
+                    <div
+                        id="successMessage"
+                        class="alert success-message d-none"
+                    >
+                        <i class="bi bi-check-circle-fill"></i>
+                        Thank you! Your registration has been
+                        successfully submitted.
+                    </div>
+
+
+                    <form id="conferenceRegistrationForm"
+                          novalidate>
+
+                        <div class="row g-4">
+
+                            <div class="col-md-6">
+
+                                <label for="fullName">
+                                    Full Name *
+                                </label>
+
+                                <div class="input-group-custom">
+
+                                    <i class="bi bi-person"></i>
+
+                                    <input
+                                        type="text"
+                                        id="fullName"
+                                        class="form-control"
+                                        placeholder="Enter your full name"
+                                        required
+                                    >
+
+                                </div>
+
+                                <div class="invalid-feedback">
+                                    Please enter your full name.
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label for="email">
+                                    Email Address *
+                                </label>
+
+                                <div class="input-group-custom">
+
+                                    <i class="bi bi-envelope"></i>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        class="form-control"
+                                        placeholder="example@email.com"
+                                        required
+                                    >
+
+                                </div>
+
+                                <div class="invalid-feedback">
+                                    Please enter a valid email.
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label for="phone">
+                                    Phone Number *
+                                </label>
+
+                                <div class="input-group-custom">
+
+                                    <i class="bi bi-telephone"></i>
+
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        class="form-control"
+                                        placeholder="+93 700 000 000"
+                                        required
+                                    >
+
+                                </div>
+
+                                <div class="invalid-feedback">
+                                    Please enter your phone number.
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label for="country">
+                                    Country *
+                                </label>
+
+                                <div class="input-group-custom">
+
+                                    <i class="bi bi-globe"></i>
+
+                                    <input
+                                        type="text"
+                                        id="country"
+                                        class="form-control"
+                                        placeholder="Your country"
+                                        required
+                                    >
+
+                                </div>
+
+                                <div class="invalid-feedback">
+                                    Please enter your country.
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label for="organization">
+                                    Organization / University
+                                </label>
+
+                                <div class="input-group-custom">
+
+                                    <i class="bi bi-building"></i>
+
+                                    <input
+                                        type="text"
+                                        id="organization"
+                                        class="form-control"
+                                        placeholder="Your organization or university"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label for="ticketType">
+                                    Ticket Type *
+                                </label>
+
+                                <div class="input-group-custom">
+
+                                    <i class="bi bi-ticket-perforated"></i>
+
+                                    <select
+                                        id="ticketType"
+                                        class="form-select"
+                                        required
+                                    >
+
+                                        <option value="">
+                                            Select ticket type
+                                        </option>
+
+                                        <option value="Student">
+                                            Student - $20
+                                        </option>
+
+                                        <option value="Professional">
+                                            Professional - $50
+                                        </option>
+
+                                        <option value="VIP">
+                                            VIP - $100
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                                <div class="invalid-feedback">
+                                    Please select a ticket type.
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label for="message">
+                                    Message / Additional Information
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    class="form-control"
+                                    rows="5"
+                                    placeholder="Write your message..."
+                                ></textarea>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <button
+                                    type="submit"
+                                    class="btn submit-btn"
+                                >
+                                    Complete Registration
+                                    <i class="bi bi-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONFERENCE BENEFITS
+========================= -->
+<section
+    class="benefits-section section-padding"
+    id="benefits"
+>
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <span class="section-label">
+                Why Attend?
+            </span>
+
+            <h2>
+                Conference <span>Benefits</span>
+            </h2>
+
+            <p>
+                Discover the opportunities waiting for you
+                at our international conference.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="benefit-card">
+
+                    <div class="benefit-icon">
+                        <i class="bi bi-mic"></i>
+                    </div>
+
+                    <h4>Expert Speakers</h4>
+
+                    <p>
+                        Learn from experienced professionals,
+                        researchers, and inspiring speakers.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="benefit-card">
+
+                    <div class="benefit-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+
+                    <h4>Networking Opportunities</h4>
+
+                    <p>
+                        Connect with professionals and build
+                        valuable relationships.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="benefit-card">
+
+                    <div class="benefit-icon">
+                        <i class="bi bi-award"></i>
+                    </div>
+
+                    <h4>Certificate</h4>
+
+                    <p>
+                        Receive an official certificate
+                        of participation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="benefit-card">
+
+                    <div class="benefit-icon">
+                        <i class="bi bi-lightbulb"></i>
+                    </div>
+
+                    <h4>Knowledge Sharing</h4>
+
+                    <p>
+                        Exchange ideas and discover new
+                        perspectives from experts.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="benefit-card">
+
+                    <div class="benefit-icon">
+                        <i class="bi bi-folder2-open"></i>
+                    </div>
+
+                    <h4>Conference Materials</h4>
+
+                    <p>
+                        Get access to useful conference
+                        resources and materials.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="benefit-card">
+
+                    <div class="benefit-icon">
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+
+                    <h4>Career Opportunities</h4>
+
+                    <p>
+                        Discover new opportunities for
+                        professional and personal growth.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FAQ
+========================= -->
+<section class="faq-section section-padding" id="faq">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <span class="section-label">
+                Need Help?
+            </span>
+
+            <h2>
+                Frequently Asked <span>Questions</span>
+            </h2>
+
+        </div>
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-9">
+
+                <div class="accordion" id="faqAccordion">
+
+
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header">
+
+                            <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqOne"
+                            >
+                                How can I register for the conference?
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqOne"
+                            class="accordion-collapse collapse show"
+                            data-bs-parent="#faqAccordion"
+                        >
+
+                            <div class="accordion-body">
+
+                                You can register by selecting your preferred
+                                ticket and completing the online registration
+                                form on this page.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqTwo"
+                            >
+                                What ticket options are available?
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqTwo"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faqAccordion"
+                        >
+
+                            <div class="accordion-body">
+
+                                We offer three ticket options:
+                                Student, Professional, and VIP.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqThree"
+                            >
+                                Can I change my ticket type?
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqThree"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faqAccordion"
+                        >
+
+                            <div class="accordion-body">
+
+                                Yes. Please contact our support team
+                                before the conference date to request
+                                a ticket change.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqFour"
+                            >
+                                Will I receive a certificate?
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqFour"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faqAccordion"
+                        >
+
+                            <div class="accordion-body">
+
+                                Yes. Registered participants will receive
+                                a certificate of participation.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqFive"
+                            >
+                                What is included in the VIP ticket?
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqFive"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faqAccordion"
+                        >
+
+                            <div class="accordion-body">
+
+                                The VIP ticket includes full conference
+                                access, VIP seating, premium materials,
+                                VIP networking, and an exclusive dinner.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faqSix"
+                            >
+                                Can students register for the conference?
+                            </button>
+
+                        </h2>
+
+                        <div
+                            id="faqSix"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faqAccordion"
+                        >
+
+                            <div class="accordion-body">
+
+                                Yes. Students can register using
+                                the special Student Ticket.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+<footer class="conference-footer">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-5">
+
+                <a class="footer-brand" href="#">
+                    Global<span>Conf</span>
+                </a>
+
+                <p>
+                    Connecting ideas, inspiring innovation,
+                    and building a better future together.
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-3">
+
+                <h5>Quick Links</h5>
+
+                <ul>
+
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#tickets">Tickets</a>
+                    </li>
+
+                    <li>
+                        <a href="#benefits">Benefits</a>
+                    </li>
+
+                    <li>
+                        <a href="#faq">FAQ</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <h5>Contact Us</h5>
+
+                <p>
+                    <i class="bi bi-envelope"></i>
+                    info@globalconf.com
+                </p>
+
+                <p>
+                    <i class="bi bi-telephone"></i>
+                    +93 700 000 000
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 GlobalConf. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- Registration JS -->
+<script src="about.js"></script>
+
+</body>
+</html>
